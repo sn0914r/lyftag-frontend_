@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* ── Brand Colors ── */
+  --primary: #0ea5e9;
+  --primary-color: #0ea5e9;
+  --secondary: #ff6b6b;
+  --secondary-color: #ff6b6b;
+  --accent: #7c3aed;
+  --accent-color: #7c3aed;
+  --accent-deep: #6d28d9;
+
+  /* ── Gradient System ── */
+  --gradient-cta: linear-gradient(90deg, #ff512f, #dd2476);
+  --gradient-logo: linear-gradient(90deg, #ff512f, #dd2476, #1fa2ff);
+  --gradient-accent: linear-gradient(135deg, #0ea5e9, #7c3aed);
+
+  --gradient-panel: linear-gradient(
+    135deg,
+    #0f1419 0%,
+    #1a1a2e 40%,
+    #16213e 100%
+  );
+  /* Usage: dark right-panel on auth pages */
+
+  --gradient-surface-primary: linear-gradient(
+    135deg,
+    rgba(14, 165, 233, 0.05),
+    rgba(124, 58, 237, 0.05)
+  );
+  /* Usage: section backgrounds, vision/mission, how-it-works */
+
+  --gradient-surface-secondary: linear-gradient(
+    135deg,
+    rgba(255, 107, 107, 0.05),
+    rgba(31, 162, 255, 0.05)
+  );
+  /* Usage: highlights section, solution section */
+
+  --gradient-surface-cta: linear-gradient(
+    135deg,
+    rgba(255, 81, 47, 0.05),
+    rgba(221, 36, 118, 0.05)
+  );
+  /* Usage: referral section */
+
+  --gradient-impact: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.1),
+    rgba(14, 165, 233, 0.08)
+  );
+  /* Usage: impact cards */
+
+  --gradient-page: linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);
+
+  /* ── Background Colors ── */
+  --dark-bg: #0f1419;
+  --dark-bg-2: #1a1a2e;
+  --dark-bg-3: #16213e;
+  --light-bg: #f8fafc;
+
+  /* ── Text Colors ── */
+  --text-dark: #111827;
+  --text-muted: #6b7280;
+  --text-white: #ffffff;
+  --text-placeholder: #9ca3af;
+  --text-disabled: #d1d5db;
+
+  /* ── Surface / UI Colors ── */
+  --surface: #ffffff;
+  --border-color: #e6e9ef;
+  --disabled-bg: #f3f4f6;
+
+  /* ── Shadows ── */
+  --shadow: 0 6px 18px rgba(15, 20, 25, 0.06);
+  --shadow-lg: 0 18px 50px rgba(15, 20, 25, 0.12);
+
+  /* Shadow for CTA buttons */
+  --shadow-cta: 0 4px 20px rgba(255, 81, 47, 0.3);
+  --shadow-cta-hover: 0 6px 30px rgba(255, 81, 47, 0.4);
+  --shadow-cta-lg: 0 8px 25px rgba(255, 81, 47, 0.4);
+  --shadow-cta-active: 0 2px 12px rgba(255, 81, 47, 0.2);
+
+  /* Shadow for logout / secondary danger button */
+  --shadow-danger-hover: 0 4px 16px rgba(255, 107, 107, 0.3);
+
+  /* Shadow for primary (blue) focus ring */
+  --shadow-focus-primary: 0 0 0 3px rgba(14, 165, 233, 0.12);
+
+  /* ── Border Radius ── */
+  --radius: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* ── Spacing Base ── */
+  --spacing: 8px;
+  --spacing-unit: 8px;
+
+  /* ── Typography ── */
+  --font-family: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* ── Transitions ── */
+  --transition-fast: all 0.15s ease;
+  --transition-base: all 0.25s ease;
+  --transition-medium: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+
+  /* ── Z-index Scale ── */
+  --z-navbar: 1000;
+
+  /* ── Layout ── */
+  --container-width: min(1200px, 94%);
+}
