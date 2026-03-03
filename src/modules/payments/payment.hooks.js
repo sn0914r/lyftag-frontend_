@@ -31,7 +31,7 @@ export const usePaymentCheckout = () => {
       }
 
       const cashfree = window.Cashfree({
-        mode: "sandbox", // Change to 'production' when going live
+        mode: "production", // Change to 'production' when going live
       });
 
       // 3. Primary checkout flow via SDK

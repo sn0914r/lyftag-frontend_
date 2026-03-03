@@ -1,5 +1,6 @@
-const API_BASE_URL = "https://annette-nondesignate-cryptically.ngrok-free.dev";
+// const API_BASE_URL = "https://annette-nondesignate-cryptically.ngrok-free.dev";
 // const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://lyftag-backend.onrender.com";
 
 const request = async (endpoint, options = {}) => {
   const { headers: extraHeaders, ...restOptions } = options;
@@ -14,7 +15,7 @@ const request = async (endpoint, options = {}) => {
       },
       ...restOptions,
     });
-
+ 
     const result = await response.json();
     console.log("✅ API Response:", { endpoint, result });
 
@@ -48,7 +49,7 @@ const request = async (endpoint, options = {}) => {
 
 export default {
   get: (endpoint, headers = {}) =>
-    request(endpoint, { method: "GET", ...headers }),
+    request(endpoint, { method: "GET", headers }),
 
   post: (endpoint, body, headers = {}) =>
     request(endpoint, {
@@ -58,12 +59,12 @@ export default {
     }),
 
   put: (endpoint, body, headers = {}) =>
-    request(endpoint, {
+    request(endpoint, { 
       method: "PATCH",
       body: JSON.stringify(body),
       headers,
     }),
 
   delete: (endpoint, headers = {}) =>
-    request(endpoint, { method: "DELETE", ...headers }),
+    request(endpoint, { method: "DELETE", headers }),
 };
